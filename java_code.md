@@ -1,4 +1,6 @@
-´´´java
+### Ejemplo de código
+
+```java
 import java.util.Scanner;
 
 /**
@@ -41,4 +43,4 @@ public class Main {
         System.out.println("Total con IVA: " + calc.calcularPrecioFinal(prod.getPrecioBase()));
     }
 }
-´´´
+```
