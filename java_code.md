@@ -79,3 +79,10 @@ classDiagram
     Main ..> CalculadoraIVA : usa para calcular
     Main ..> Scanner : lee entrada
 ```
+
+## Explicación de los símbolos:
+
+- (Guion): Significa que el atributo es private. Solo se ve dentro de esa clase.
++ (Más): Significa que el método es public. Se puede llamar desde fuera (como el constructor de Producto).
+Flechas punteadas ..>: Indican una dependencia. Significa que la clase Main necesita a las otras para funcionar, pero no "son" parte de ella permanentemente (solo las usa en el método main).
+<<External>>: Es una nota para indicar que Scanner no lo hemos programado nosotros, sino que viene de la librería de Java (java.util).
