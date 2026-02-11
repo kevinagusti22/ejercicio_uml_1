@@ -7,7 +7,7 @@ Crea un diagrama de clases en UML para pegar en GitHub con Mermaid, de una aplic
 
 ## Diagrama de clases en mermaid
 
-´´´java
+```java
 classDiagram
     class AplicacionCifrado {
         -boolean ejecutando
@@ -68,9 +68,9 @@ classDiagram
     AlgoritmoCifrado <|-- AES : hereda
     AlgoritmoCifrado <|-- Blowfish : hereda
     AlgoritmoCifrado <|-- MD5 : hereda
-´´´
+```
 
-´´´mermaid
+```mermaid
 classDiagram
     class AplicacionCifrado {
         -boolean ejecutando
@@ -131,4 +131,4 @@ classDiagram
     AlgoritmoCifrado <|-- AES : hereda
     AlgoritmoCifrado <|-- Blowfish : hereda
     AlgoritmoCifrado <|-- MD5 : hereda
-´´´
+```
