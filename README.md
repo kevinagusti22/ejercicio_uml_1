@@ -136,3 +136,23 @@ Indica si son:
 - Otro tipo (explica cuál)
 
 
+```mermaid
+classDiagram
+    class Producto {
+        -String nombre
+        -double precioBase
+        +Producto(String nombre, double precioBase)
+        +getPrecioBase() double
+    }
+
+    class CalculadoraIVA {
+        -double IVA
+        +calcularPrecioFinal(double precio) double
+    }
+
+    class Main {
+        +main(String[] args)
+    }
+
+    Main ..> Producto : usa
+    Main ..> CalculadoraIVA : usa
