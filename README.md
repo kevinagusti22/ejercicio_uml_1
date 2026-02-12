@@ -136,3 +136,24 @@ Indica si son:
 - Otro tipo (explica cuál)
 
 
+```mermaid
+sequenceDiagram
+    participant U as Usuario
+    participant M as Main
+    participant P as Producto
+    participant C as CalculadoraIVA
+
+    U->>M: Ejecuta programa
+    M->>U: Solicita nombre y precio
+    U-->>M: Introduce "Laptop", 1000
+    
+    Note over M: Crea instancia de Producto
+    M->>P: new Producto("Laptop", 1000)
+    
+    M->>P: getPrecioBase()
+    P-->>M: 1000
+    
+    M->>C: calcularPrecioFinal(1000)
+    C-->>M: 1210
+    
+    M->>U: Imprime "Total con IVA: 1210"
